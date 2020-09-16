@@ -10,6 +10,7 @@ morgan.token('bodydata', (request, response) => JSON.stringify(request.body))
 
 const cors = require('cors')
 app.use(cors())
+app.use(express.static('build'))
 
 
 let persons = [
